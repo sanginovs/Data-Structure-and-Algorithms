@@ -18,7 +18,6 @@
  
  */
 
-
 public class ResizeableArray {
 	private int[] items_array = new int[10]; //the array starts off with 10 empty spots
 	private int size=0; //the actual size of array is zero; no items in it
@@ -40,10 +39,6 @@ public class ResizeableArray {
 		ensureExtraSpace(); //check if there's extra space in the array
 		items_array[size]=item;
 		size++;
-		
-		
-		
-		
 	}
 	
 	private void ensureExtraSpace()
@@ -54,13 +49,8 @@ public class ResizeableArray {
 			System.arraycopy(items_array, 0, new_array, 0, size); //copies all the items to a new array
 			items_array=new_array; //items_array should point to new array now
 		}
-		
-		
-		
 	}
-	
-	
-	
+		
 	public int get(int index){  //this function returns an item from a specified array index
 		if(index<0 && index >= size){   //checking whether the index is out of bounds
 	    	throw new ArrayIndexOutOfBoundsException(index);
@@ -68,6 +58,5 @@ public class ResizeableArray {
 		return items_array[index];
 		
 	}
-	
 	
 }
