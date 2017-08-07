@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 /* 
 Time complexity: O(n) (where n is the length of a string )
-Space Complexity: O(n)
+Space Complexity: O(1)
 
 */
 public class Unique {
