@@ -8,6 +8,11 @@ import java.util.Scanner;
  
  */
 
+/* 
+Time complexity: O(n) (where n is the length of a string )
+Space Complexity: O(n)
+
+*/
 public class Unique {
 	public boolean isUnique(String x){
 		if(x.length()>128){  //if string is more than 128 characters, it's not unique
